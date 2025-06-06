@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме — Дьомін Назар</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title" style="font-size: 36px;">Дьомін Назар</h1>
+
+    <label class="section">
+        <input type="checkbox" id="theme-toggle"> Нічна тема
+    </label>
+
+    <div class="section">
+        <p><strong>Рік народження:</strong> 2005</p>
+        <p><strong>Країна:</strong> Україна</p>
+        <p><strong>Місто:</strong> Львів</p>
+    </div>
+
+    <div class="section">
+        <h2>Освіта</h2>
+        <p><strong>2022 — теперішній час:</strong> Львівська політехніка</p>
+        <p><strong>Спеціальність:</strong> Кібербезпека</p>
+    </div>
+
+    <div class="section">
+        <h2>Про себе</h2>
+        <p>Маю інтерес до інформаційної безпеки, працюю з Linux та мережами. Люблю навчатись та працювати в команді.</p>
+    </div>
+
+    <div class="section">
+        <h2>Навички</h2>
+        <div class="skills-container">
+            <ul role="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>TCP/IP</li>
+                <li>Linux</li>
+                <li>Wireshark</li>
+                <li>GPG</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Контакти</h2>
+        <p><strong>Email:</strong> nazar.d@example.com</p>
+        <p><strong>Телефон:</strong> +380-XX-XXX-XXXX</p>
+    </div>
+
+    <div class="section">
+        <h2>Коментарі роботодавців</h2>
+        <div id="comments-container">Завантаження...</div>
+    </div>
+
+    <footer id="localstorage-footer" class="section">
+        <h2>Інформація про браузер</h2>
+        <div id="browser-info"></div>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Зворотний зв'язок</h2>
+            <form action="https://formspree.io/f/mrbkeboy" method="POST">
+                <input type="text" name="name" placeholder="Ім’я" required><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <input type="tel" name="phone" placeholder="Телефон" required><br>
+                <textarea name="message" placeholder="Ваше повідомлення..." required></textarea><br>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

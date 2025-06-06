@@ -1,0 +1,94 @@
+/* Селектор тегу */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Нічна тема */
+body.night {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+body.night .section {
+    background-color: #2e2e2e;
+}
+
+/* Селектор ID */
+#main-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Селектор класу */
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Селектор атрибуту */
+ul[role="skills"] li {
+    background-color: #e3f2fd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Псевдоклас */
+ul[role="skills"] li:hover {
+    background-color: #bbdefb;
+    cursor: pointer;
+}
+
+/* Flexbox */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Box Model приклад */
+.section p, .section li {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Модальне вікно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
